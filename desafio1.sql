@@ -45,10 +45,9 @@ CREATE TABLE IF NOT EXISTS usuarios (
 ) ENGINE = InnoDB;
 
 CREATE TABLE IF NOT EXISTS seguindo (
-  id_seguindo SMALLINT NOT NULL auto_increment,
   id_usuario SMALLINT NOT NULL,
   id_artista SMALLINT NOT NULL,
-  PRIMARY KEY (`id_seguindo`),
+  PRIMARY KEY (`id_usuario`, `id_artista`),
   foreign key (`id_usuario`) references usuarios(`id_usuario`),
   foreign key (`id_artista`) references artistas(`id_artista`)
 ) ENGINE = InnoDB;
