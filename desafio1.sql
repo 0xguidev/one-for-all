@@ -5,10 +5,10 @@ CREATE DATABASE SpotifyClone;
 USE SpotifyClone;
 
 CREATE TABLE IF NOT EXISTS planos (
-	id_plano SMALLINT NOT NULL auto_increment,
-    plano VARCHAR(45) NOT NULL,
-    valor_plano DECIMAL(5,2) NOT NULL,
-    PRIMARY KEY(`id_plano`)
+  id_plano SMALLINT NOT NULL auto_increment,
+  plano VARCHAR(45) NOT NULL,
+  valor_plano DECIMAL(5,2) NOT NULL,
+  PRIMARY KEY(`id_plano`)
 ) engine = InnoDB;
 
 CREATE TABLE IF NOT EXISTS artistas (
