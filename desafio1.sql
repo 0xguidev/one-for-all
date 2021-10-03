@@ -54,10 +54,9 @@ CREATE TABLE IF NOT EXISTS seguindo (
 ) ENGINE = InnoDB;
 
 CREATE TABLE IF NOT EXISTS historicos (
-  id_historico SMALLINT NOT NULL auto_increment,
   id_usuario SMALLINT NOT NULL,
   id_cancao SMALLINT NOT NULL,
-  PRIMARY KEY (`id_historico`),
+  PRIMARY KEY (`id_usuario`, `id_cancao`),
   foreign key (`id_usuario`) references usuarios(`id_usuario`),
   foreign key (`id_cancao`) references cancoes(`id_cancao`)
 ) ENGINE = InnoDB;
