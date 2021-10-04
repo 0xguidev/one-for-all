@@ -7,5 +7,5 @@ FROM
   artistas AS a
   INNER JOIN albuns AS b ON a.id_artista = b.id_artista
   INNER JOIN seguindo as s ON a.id_artista = s.id_artista
-  GROUP BY 2
+  GROUP BY 2, 1
   ORDER BY 3 DESC, 1, 2;
