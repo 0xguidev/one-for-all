@@ -95,7 +95,7 @@ VALUES
 ('Fantasy For Me', 3, 4),
 ('Celebration Of More', 3, 4),
 ('Rock His Everything', 3, 4),
-('Home Foreveer', 3, 4),
+('Home Forever', 3, 4),
 ('Diamond Power', 3, 4),
 ("Honey, Let's Be Silly", 3, 4),
 ('Thang Of Thunder', 4, 5),
