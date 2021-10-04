@@ -17,7 +17,7 @@ CREATE TABLE IF NOT EXISTS artistas (
   PRIMARY KEY (`id_artista`))
 ENGINE = InnoDB;
 
-CREATE TABLE IF NOT EXISTS albums (
+CREATE TABLE IF NOT EXISTS albuns (
   id_album SMALLINT NOT NULL auto_increment,
   album VARCHAR(45) NOT NULL,
   id_artista SMALLINT NOT NULL,
@@ -32,7 +32,7 @@ CREATE TABLE IF NOT EXISTS cancoes (
   id_album SMALLINT NOT NULL,
   PRIMARY KEY (`id_cancao`),
   foreign key (`id_artista`) references artistas(`id_artista`),
-  foreign key (`id_album`) references albums(`id_album`)
+  foreign key (`id_album`) references albuns(`id_album`)
 )ENGINE = InnoDB;
 
 CREATE TABLE IF NOT EXISTS usuarios (
@@ -73,7 +73,7 @@ VALUES
   ('Lance Day'),
   ('Freedie Shannon');
 
-INSERT INTO albums (album, id_artista)
+INSERT INTO albuns (album, id_artista)
 VALUES
   ('Envious', 1),
   ('Exuberant', 1),
