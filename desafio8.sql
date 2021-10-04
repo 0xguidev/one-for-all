@@ -8,5 +8,3 @@
     delete from historicos where id_usuario = OLD.id_usuario;
  END $$
 DELIMITER ;
-
-
